@@ -1,29 +1,94 @@
-🚕 Cab Booking System – SQL Database Project
+Cab Booking System (SQL Project)
 
-This project is a Cab Booking System designed using SQL to manage and streamline cab operations. It includes well-structured database tables, relationships, sample data, and queries to simulate a real-world booking workflow.
+The Cab Booking System is a database-driven project designed to manage cab bookings, drivers, customers, payments, and trip records. It focuses on efficient data storage, relational design, and SQL-based operations such as querying, filtering, and reporting.
 
-🔹 Features
+📌 Features
 
-User Management – Store customer details such as name, phone number, and location.
+Customer Management: Store and manage customer information.
 
-Driver Management – Maintain driver profiles, availability status, and cab details.
+Driver Management: Maintain driver profiles, license details, and cab assignments.
 
-Cab Information – Track cab types, model, capacity, and fare factors.
+Cab Details: Track cab types, numbers, availability, and status.
 
-Booking System – Create and manage ride bookings with pickup/drop locations, fare, and timestamps.
+Booking System: Create and manage bookings with pickup/drop locations and time.
 
-Trip Records – Maintain trip history including driver assignment, trip duration, and customer feedback.
+Trip Management: Logs trip start/end time, distance traveled, and total fare.
 
-Payment Tracking – Record payment mode, status, and billing details.
+Payment Handling: Manage payment status, mode, and transaction records.
 
-🔹 Database Highlights
+Reports & Queries:
 
-Normalized relational database (3NF)
+Total rides per customer
 
-Primary & foreign key relationships
+Earnings per driver
 
-Joins, aggregate queries, views, and stored procedures
+Daily/Monthly revenue
 
-Sample data for testing
+Cabin availability status
 
-Supports CRUD operations
+🛠️ Tech Stack
+
+SQL Database: MySQL / PostgreSQL / SQL Server (choose based on your project)
+
+Optional: Frontend or backend layer if you extend it later
+
+📂 Database Structure
+Tables Included
+
+customers
+
+drivers
+
+cabs
+
+bookings
+
+trips
+
+payments
+
+Key Relationships
+
+One customer → Many bookings
+
+One driver → Many trips
+
+One cab → Many trips
+
+One booking → One trip & One payment
+
+⚙️ SQL Operations Demonstrated
+
+CREATE, INSERT, UPDATE, DELETE queries
+
+INNER JOIN, LEFT JOIN, AGGREGATE functions
+
+TRIGGERS & STORED PROCEDURES (optional)
+
+VIEWS for generating reports
+
+FOREIGN KEY constraints & indexing for optimization
+
+🚀 How to Use
+
+Import the .sql file into your SQL server.
+
+Run table creation scripts.
+
+Insert sample data.
+
+Use provided queries to test the system.
+
+Extend it with UI or API if needed.
+
+📈 Possible Extensions
+
+Admin dashboard
+
+Real-time cab tracking
+
+Rating & reviews system
+
+Automated fare calculation procedures
+
+Authentication system for customers & drivers
